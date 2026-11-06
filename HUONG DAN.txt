@@ -1,0 +1,11 @@
+# Khôi phục video CapCut
+
+1. Giải nén toàn bộ thư mục, nhấp đúp `Chay Cong Cu.bat`.
+2. Chọn video `*_video.mp4` hoặc chọn thư mục `Resources\combination`.
+3. Chọn nơi lưu và bấm **Khôi phục video**. Tên đầu ra tự thêm `_khoi_phuc`.
+
+Cần Windows có Python 3 và Tkinter; máy hiện tại đã có Python. File gốc không bị sửa. Không chọn file `.alpha.mp4` nếu muốn khôi phục video thông thường; alpha là dữ liệu phụ và không tự ghép vào kết quả. Video có thể chỉ là một phần dự án, có thể thiếu âm thanh hoặc hiệu ứng. Công cụ chỉ khôi phục cấu trúc MP4, không dựng lại timeline và không mã hóa lại video. Ứng dụng kiểm tra cấu trúc MP4, không đảm bảo mọi khung hình đều phát đúng. Nếu không mở được video HEVC, thử VLC.
+
+Hỗ trợ CapCut BDVE loại 1 với ba bộ tham số được nhận biết, bao gồm file được xử lý ngày 06/11/2026. Các file kiểu khác có thể không được hỗ trợ. Nếu CapCut đang ghi file, hãy đợi ghi xong trước khi khôi phục.
+
+Mã đọc và kiểm tra cấu trúc MP4 sử dụng các thành phần từ https://github.com/pikadexofc/capcut-cache-recover theo giấy phép MIT đi kèm `LICENSE-third-party.txt`.
