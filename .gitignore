@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+*.log
+# Cache/input video should stay local
+*.mp4
+*.mov
+*.tmp
